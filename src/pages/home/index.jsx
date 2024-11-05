@@ -3,9 +3,8 @@ import Categories from "../../components/categories";
 import ProductList from "../../components/productList";
 import { changeLimit, fetchProducts } from "../../store/slices/productsSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { FaFilter} from "react-icons/fa";
+import { FaFilter } from "react-icons/fa";
 import { FaFilterCircleXmark } from "react-icons/fa6";
-
 
 const Home = () => {
   const [isFilterAllow, setIsFilterAllow] = useState(false);
@@ -43,7 +42,7 @@ const Home = () => {
         onClick={() => setIsFilterAllow((prev) => !prev)}
         className='lg:hidden absolute z-10 top-7 right-2'
       >
-       {isFilterAllow ? <FaFilterCircleXmark />:<FaFilter />}
+        {isFilterAllow ? <FaFilterCircleXmark /> : <FaFilter />}
       </button>
       <div className='hidden lg:block w-2/12 h-full sticky top-0'>
         <Categories />

@@ -1,7 +1,6 @@
 import React from "react";
 
 const ProductCard = ({ product }) => {
-  console.log(product,'product:::')
   return (
     <div className='w-full h-full'>
       <figure className='bg-slate-400 w-full'>
